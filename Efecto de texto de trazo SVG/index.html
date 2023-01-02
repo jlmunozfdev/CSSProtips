@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Efecto de texto de trazo SVG</title>
+  
+  <link href="https://fonts.cdnfonts.com/css/dragonlord" rel="stylesheet">
+</head>
+<body>
+  
+
+  <svg viewBox="0 0 1320 300">
+
+   
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        Hola Mundo 2023
+      </text>
+    </symbol>  
+  
+    
+    <use xlink:href="#s-text" class="text"
+         ></use>
+    <use xlink:href="#s-text" class="text"
+         ></use>
+    <use xlink:href="#s-text" class="text"
+         ></use>
+    <use xlink:href="#s-text" class="text"
+         ></use>
+    <use xlink:href="#s-text" class="text"
+         ></use>
+  
+  </svg>
+
+
+
+</body>
+</html>

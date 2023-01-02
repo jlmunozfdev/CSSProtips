@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(204, 168, 6), rgb(214, 69, 69), rgb(0, 0, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgb(150, 12, 12);
+    border-radius: 15px;
+    padding: 4rem;
+}
+
+img {
+    width: 15rem;
+    height: 15rem;
+    transition: transform 2s;
+}
+
+img:hover {
+    transform: rotateY(150deg);
+}
