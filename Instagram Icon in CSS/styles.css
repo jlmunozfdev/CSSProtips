@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: black;
+    background: linear-gradient(-50deg, rgb(136, 79, 0) 0%, rgb(100, 1, 1) 50%, rgb(36, 0, 58) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,12 +48,11 @@ body {
     border: solid 10px white;
     border-radius: 30px;
     margin: 20px;
-    transition: transform 2s;
+    
 }
 
-.cap-2:hover {
-    transform: rotateY(150deg);
-}
+
+
 
 .cap-3 {
     width: 10px;
