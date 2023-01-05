@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #d2ff28, #3ddfdf);
+}
+
+.div__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 50px;
+    background: #333;
+    opacity: 0.9;
+    border-radius: 15px;
+    border: solid 2px #fff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    gap: 50px;
+   
+}
+
+.title {
+    font-size: 30px;
+    color: #fff;
+}
+
+.container__input {
+    position: relative;
+    width: 350px;
+}
+
+.container__input input {
+    position: relative;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    color: #333;
+    font-size: 1.25em;
+    transition: 0.5s;
+    letter-spacing: 0.05em;
+    z-index: 2;
+}
+
+.container__input span {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
+.container__input input:valid ~ span,
+.container__input input:focus ~ span
+{
+    font-size: 0.8em;
+    transform: translateY(-32px);
+}
+
+.container__input i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    background: linear-gradient(45deg, #d2ff28, #3ddfdf);
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+
+.container__input input:valid ~ i,
+.container__input input:focus ~ i
+{
+    height: 100%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+
+.container__socials {
+    display: flex;
+    gap: 30px;
+}
+
+.div__social {
+    display: inline-block;
+    margin: 30px;
+    cursor: pointer;
+    
+}
+
+.div__social a{
+    display: block;
+    background: #333;
+    padding: 10px;
+    position: relative;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    transition: all 0.5s ease-in-out;
+}
+
+.div__social a::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    left: -20px;
+    top: 10px;
+    transform: rotate(0deg) skewY(-45deg);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.div__social a::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    height: 20px;
+    left: -10px;
+    transform: rotate(0deg) skewX(-45deg);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.div__social a:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 30px rgba(0, 0, 0, 0.5);
+}
+
+.div__social a i {
+    color: #fff;
+    font-size: 18px;
+}
+
+.container__user span {
+    font-size: 25px;
+}
+
+
+
