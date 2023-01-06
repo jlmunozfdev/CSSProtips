@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	background-image: url('https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+	align-items: center;
+	min-height: 100vh;
+}
+
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: rgba(58, 58, 58, 0.5);
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.container::before {
+	content: '';
+	position: absolute;
+	width: 250px;
+	height: 140%;
+	background: linear-gradient(rgb(255, 217, 0), rgb(160, 10, 140));
+	animation: animate 4s linear infinite;
+}
+
+.container::after {
+	content: '';
+	position: absolute;
+	inset: 4px;
+	background: #01333a;
+	border-radius: 16px;
+}
+
+@keyframes animate 
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	} 
+}
+
+.container h2 {
+	position: relative;
+	color: #fff;
+	font-size: 1.5rem;
+	z-index: 10;
+}
