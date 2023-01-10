@@ -1,0 +1,158 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(143, 130, 130), #ffffff);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/* GENERAL */
+
+h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* CARD TIKTOK | CARD TWITTER | CARD INSTAGRAM*/
+
+.card__tiktok, 
+.card__twitter, 
+.card__instagram 
+{
+    width: 200px;
+    height: 150px;
+    transition: 0.7s;
+    border-radius: 20px;
+    
+}
+
+/* CARD TIKTOK */
+
+.card__tiktok:hover {
+    background-color: aliceblue;
+    height: 300px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.06), -5px -5px 50px rgba(0, 0, 0, 0.6);
+}
+
+.sub__tiktok--one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.sub__tiktok--one a i {
+    font-size: 50px;
+    color: aliceblue;
+    transition:.5s;
+}
+
+.sub__tiktok--one a i:hover {
+   cursor: pointer;
+   transform: rotate(22deg);
+   color: rgb(34, 34, 221);
+}
+
+
+/* SUB__TIKTOK--TWO | SUB__TWITTER--TWO | SUB__INSTAGRAM--TWO */
+.sub__tiktok--two, 
+.sub__twitter--two, 
+.sub__instagram--two 
+{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 60px;
+    visibility: hidden;
+}
+
+.card__tiktok:hover .sub__tiktok--two, 
+.card__twitter:hover .sub__twitter--two, 
+.card__instagram:hover .sub__instagram--two 
+{
+
+    visibility: visible;
+}
+
+/* CARD TWITTER */
+
+.card__twitter:hover {
+    background-color: aliceblue;
+    height: 300px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.06), -5px -5px 50px rgba(0, 0, 0, 0.6);
+}
+
+.sub__twitter--one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #28d4eb;
+    width: 200px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.sub__twitter--one a i {
+    font-size: 50px;
+    color: aliceblue;
+    transition: .5s;
+}
+
+.sub__twitter--one a i:hover {
+   cursor: pointer;
+   transform: rotate(22deg);
+   color: rgb(11, 113, 153);
+}
+
+/* CARD INSTAGRAM */
+
+.card__instagram:hover {
+    background-color: aliceblue;
+    height: 300px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.06), -5px -5px 50px rgba(0, 0, 0, 0.6);
+}
+
+.sub__instagram--one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f58968;
+    width: 200px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.sub__instagram--one a i {
+    font-size: 50px;
+    color: aliceblue;
+    transition: .5s;
+}
+
+.sub__instagram--one a i:hover {
+   cursor: pointer;
+   transform: rotate(22deg);
+   color: #fa3318;
+}
