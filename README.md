@@ -1,10 +1,10 @@
-# Protips para mejorar tus animaciones usando CSS
+# 100 Days of Code with CSS
 
-## Pasos para ejecutar el proyecto:
+## Steps to run the project:
 
-1. Clonar repositorio
-2. Disfrutar
-3. No olvidar seguirme en mis redes 👇👇👇
+1. Clone repository
+2. Enjoy
+3. Do not forget to follow me on my social networks 👇👇👇
 
 *** 
 
