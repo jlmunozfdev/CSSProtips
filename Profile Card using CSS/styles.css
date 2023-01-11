@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +8,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
-body { 
+body {
     display: grid;
     place-items: center;
     min-height: 100vh;
@@ -17,31 +17,31 @@ body {
 
 
 .card {
-    background: linear-gradient(45deg, #000000, #05283d);
+    background: linear-gradient(45deg, #000, #05283d);
     border-radius: 20px;
-    border: 4px solid #ffffff;
+    border: 4px solid #fff;
+    width: 400px;
     height: 220px;
     position: relative;
     transition: 0.5s;
-    width: 400px;
 }
 
 .card:hover {
-  height: 450px;
-  margin-top: 4rem;
+    height: 450px;
+    margin-top: 4rem;
 }
 
 /* SECTION FIGURE */
+
 .figure__image {
-    
-  position: absolute;
-  left: 50%;
-  top: -24%;
-  transform: translateX(-50%);
-  width: 136px;
-  height: 136px;
-  overflow: hidden;
-  transition: 0.5s;
+    position: absolute;
+    left: 50%;
+    top: -24%;
+    transform: translateX(-50%);
+    width: 136px;
+    height: 136px;
+    overflow: hidden;
+    transition: .5s;
 }
 
 .figure__image img {
@@ -52,13 +52,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 4px solid #ffffff;
+    border: 4px solid #fff;
     border-radius: 50%;
 }
 
 .card:hover .figure__image {
-  width: 180px;
-  height: 180px;
+    width: 180px;
+    height: 180px;
 }
 
 /* SECTION DESCRIPTION */
@@ -87,9 +87,7 @@ body {
     text-transform: uppercase;
 }
 
-
-
-/* SECTION STAtISTICS */
+/* SECTION STATISTICS */
 
 .section__statistics {
     display: flex;
@@ -97,12 +95,12 @@ body {
     align-items: center;
     text-align: center;
     color: aliceblue;
-    opacity: 0.5;
+    opacity: .5;
     padding-top: 20px;
     gap: 40px;
     visibility: hidden;
-    transition: 0.5s;
-    transform: translateY(150px);
+    transition: .1s;
+    transform: translateY(-180px, 150px);
 }
 
 .card:hover .section__statistics {
@@ -110,29 +108,30 @@ body {
     transform: translateY(0px);
 }
 
-.statistics--posts span {
+.statistics--post span {
     font-size: 0.8rem;
     letter-spacing: 3px;
 }
 
-
 /* SECTION SOCIALS */
+
 .section__socials {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    opacity: 0.5;
+    opacity: .5;
     gap: 30px;
     visibility: hidden;
-    transition: 0.5s;
-    transform: translateY(150px);
+    transition: .1s;
+    transform: translateY(-180px, 150px);
 }
 
 .card:hover .section__socials {
     visibility: visible;
-    transform: translateY(0px);
+    
 }
+
 .section__socials i {
     color: aliceblue;
     font-size: 25px;
@@ -144,16 +143,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 490px;
     gap: 25px;
     visibility: hidden;
-    transition: 0.5s;
-    transform: translateY(150px);
+    transition:  1s linear 0s;
+    transform: translateY(-180px, 150px);
 }
 
 .card:hover .section__buttons {
     visibility: visible;
-    transform: translateY(0px);
+    padding-top: 50px;
 }
 
 .section__buttons button {
@@ -161,7 +160,7 @@ body {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .buttons--one {
@@ -171,16 +170,14 @@ body {
     font-weight: 700;
     width: 150px;
     letter-spacing: 2px;
-  
 }
 
 .buttons--one:hover {
     background-color: #1272ad;
-    color: #ffffff;
-    transform:scale(1.1);transform:scale(1.1);
+    color: aliceblue;
+    transform: scale(1.1); 
     cursor: pointer;
 }
-  
 
 .buttons--two {
     background-color: aliceblue;
@@ -189,22 +186,11 @@ body {
     font-weight: 700;
     width: 150px;
     letter-spacing: 2px;
-    
 }
 
 .buttons--two:hover {
     background-color: #333;
     color: aliceblue;
-    transform:scale(1.1);transform:scale(1.1);
+    transform: scale(1.1);
     cursor: pointer;
-
 }
-
-
-
-
-
-
-
-
-
