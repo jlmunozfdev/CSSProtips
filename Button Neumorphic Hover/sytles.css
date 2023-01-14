@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,800;0,900;1,600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #EFEFEF;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.button__neumorphic--one, .button__neumorphic--two, .button__neumorphic--three {
+    min-width: 130px;
+    height: 40px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 5px;
+    border: none;
+    z-index: 0;
+    overflow: hidden;
+    color: #adb5bd;
+    background: #efefef;
+    box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+    color: #585858;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+ 
+/* BUTTON ONE */
+
+  .button__neumorphic--one:hover {
+    color: rgb(255, 255, 255);
+  }
+  .button__neumorphic--one:hover:after {
+    height: 100%;
+  }
+  .button__neumorphic--one:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: #66102d;
+  }
+
+/* BUTTON TWO */
+  .button__neumorphic--two:active {
+    box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+  }
+  
+/* BUTTON THREE */
+
+  .button__neumorphic--three:hover {
+    color: rgb(230, 230, 240);
+  }
+  .button__neumorphic--three:hover:after {
+    width: 100%;
+  }
+  .button__neumorphic--three:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #011120;
+  }
