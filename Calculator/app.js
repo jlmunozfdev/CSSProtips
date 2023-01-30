@@ -110,19 +110,19 @@ function resolver() {
 
     switch (operacion) {
         case '+':
-            res = parseFloat(operandoA) + parseFloat(operandoB);
+            res = parseFloat(operandoA).toFixed(2) + parseFloat(operandoB).toFixed(2);
             break;
 
         case '-':
-            res = parseFloat(operandoA) - parseFloat(operandoB);
+            res = parseFloat(operandoA).toFixed(2) - parseFloat(operandoB).toFixed(2);
             break;
 
         case '*':
-            res = parseFloat(operandoA) * parseFloat(operandoB);
+            res = parseFloat(operandoA).toFixed(2) * parseFloat(operandoB).toFixed(2);
             break;
 
         case '/':
-            res = parseFloat(operandoA) / parseFloat(operandoB);
+            res = parseFloat(operandoA).toFixed(2) / parseFloat(operandoB).toFixed(2);
             break;
     
         default:
