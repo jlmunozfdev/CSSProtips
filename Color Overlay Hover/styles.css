@@ -57,9 +57,12 @@ body {
 }
 
 #html {
+    color: #da5e3fe6;
+}
+
+#html:hover {
     background-image: url(https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png);
     background-size: cover;
-    color: #da5e3fe6;
 }
 
 #html::after {
@@ -67,9 +70,12 @@ body {
 }
 
 #css {
+    color: #138ef3e6;
+}
+
+#css:hover {
     background-image: url(https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png);
     background-size: cover;
-    color: #138ef3e6;
 }
 
 #css::after {
@@ -77,11 +83,14 @@ body {
 }
 
 #javascript {
+    color: #f1cf0ee6;
+}
+
+#javascript:hover {
     background-image: url(https://cdn.icon-icons.com/icons2/2108/PNG/512/javascript_icon_130900.png);
     background-size: 80% 85%;
     background-position: center;
     background-repeat: no-repeat;
-    color: #f1cf0ee6;
 }
 
 #javascript::after {
