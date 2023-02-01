@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: #08314d;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 0 100px inset, 0 0 5px grey;
+    transition: box-shadow 1s;
+    float: left;
+    margin: 10px;
+}
+
+.card::after {
+    width: 80%;
+    height: 20%;
+    display: block;
+    white-space: pre;
+    font-size: 1rem;
+    color: aliceblue;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    text-align: center;
+    border-radius: 8px;
+    transition: opacity 1s .5s;
+    text-transform: uppercase;
+}
+
+.card:hover {
+    box-shadow: 0 0 0 5px inset, 0 0 5px #0000000f, 0 0 10px #0000000f inset;
+    transition: box-shadow 1s;
+    cursor: pointer;
+}
+
+.card:hover::after {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#html {
+    background-image: url(https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png);
+    background-size: cover;
+    color: #da5e3fe6;
+}
+
+#html::after {
+    content: 'HTML';
+}
+
+#css {
+    background-image: url(https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png);
+    background-size: cover;
+    color: #138ef3e6;
+}
+
+#css::after {
+    content: 'CSS'
+}
+
+#javascript {
+    background-image: url(https://cdn.icon-icons.com/icons2/2108/PNG/512/javascript_icon_130900.png);
+    background-size: 80% 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1cf0ee6;
+}
+
+#javascript::after {
+    content: 'JavaScript'
+}
+
+
