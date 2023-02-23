@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -9,22 +7,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-	background: darkslategray;
+	background: #12684e;
 	
 }
 
 .container {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
     position: absolute;
 }
-
 
 /* SECTION TEXT */
 
@@ -36,7 +32,7 @@ body {
 
 p {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 4px;
     border-right: solid 3px #bee60c;
     white-space: nowrap;
@@ -53,7 +49,7 @@ p a {
 }
 
 .icon {
-    font-size: 18px;
+    font-size: 16px;
     color: #051c2e;
     background: #bee60c;
     padding: 5px;
@@ -64,7 +60,7 @@ p a {
   
 @keyframes animated-text{
     from{width: 0;}
-    to{width: 170px;}
+    to{width: 165px;}
 }
   
 /* Cursor Animation */
@@ -72,6 +68,11 @@ p a {
 @keyframes animated-cursor{
     from{border-right-color: #bee60c;}
     to{border-right-color: transparent;}
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
 }
 
 .btn {
@@ -90,7 +91,6 @@ p a {
     width: 120px;
     height: 30px;
     background-color: #250902;
-    margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0,0,0,0.20);
     border-radius: 4px;
 }
@@ -105,15 +105,21 @@ p a {
     position: absolute;
     left: 0;
     top: 0;
-    height: 490%;
+    height: 550%;
     width: 140%;
     background: #75172a;
     transition: all .5s ease-in-out;
-    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: 
+            translateX(-98%) 
+            translateY(-25%) 
+            rotate(45deg);
 }
 
 .btn:hover:after {
-    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: 
+            translateX(-9%) 
+            translateY(-25%) 
+            rotate(45deg);
 }
 
 .link {
