@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+	background: darkslategray;
+	
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+}
+
+
+/* SECTION TEXT */
+
+.section__text {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    border-right: solid 3px #bee60c;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+            animated-text 4s steps(29,end) 1s 1 normal both, 
+            animated-cursor 600ms steps(29,end) infinite;   
+}
+
+p a {
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: #bee60c;
+}
+
+.icon {
+    font-size: 18px;
+    color: #051c2e;
+    background: #bee60c;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* Animation */
+  
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 170px;}
+}
+  
+/* Cursor Animation */
+  
+@keyframes animated-cursor{
+    from{border-right-color: #bee60c;}
+    to{border-right-color: transparent;}
+}
+
+.btn {
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #efefd0;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 10px;
+    width: 120px;
+    height: 30px;
+    background-color: #250902;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+    border-radius: 4px;
+}
+
+.btn span {
+    position: relative; 
+    z-index: 1;
+}
+
+.btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #75172a;
+    transition: all .5s ease-in-out;
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.link {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.link a {
+    color: #000;
+    font-size: 25px; 
+}
+
+
+
+
