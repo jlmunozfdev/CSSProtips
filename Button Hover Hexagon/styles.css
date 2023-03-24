@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #211c68;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 900px;
+}
+  
+.hexagon-wrapper {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+  
+.hexagon {
+    position: relative;
+    width: 46%;
+    height: 80%;
+    margin: auto;
+    color: rgb(180, 141, 10);
+    background: 
+            linear-gradient(
+            -180deg, 
+            rgb(8, 82, 241), 
+            #140255);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+  
+.hexagon i {
+    z-index: 1;
+    margin: auto;
+    font-size: 3.5rem;
+    color: transparent;
+    background: linear-gradient(
+                45deg, 
+                #f0edf5, 
+                #b4acaf);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+  
+.hexagon:before,
+.hexagon:after {
+    position: absolute;
+    content: "";
+    background: inherit;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.hexagon:before {
+    transform: rotateZ(60deg);
+}
+
+.hexagon:after {
+    transform: rotateZ(-60deg);
+}
+
+.hexagon:hover {
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.hexagon:hover:before {
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.hexagon:hover:after {
+    border-radius: 50px;
+    transition: 0.5s;
+}
