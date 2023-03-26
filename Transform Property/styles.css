@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primario: #332f79;
+    --secundario: #00da55;
+    --gris: #3b3b3b;
+    --blanco: #ffffff;
+    --negro: #1f1f1f;
+    --grisClaro: #e1e1e1;
+    --separacion: 5rem;
+    --fuentePrincipal: 'Poppins', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    background: var(--primario);
+}
+h3 {
+    font-size: 3rem;
+    color: var(--secundario);
+}
+
+h3 span{
+    color: var(--blanco);
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1f1f;
+    color: var(--blanco);
+    padding: 1rem;
+    margin-bottom: 0.3rem;
+    border-radius: 0.3rem;
+}
+.card p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.card span {
+    color: var(--secundario);
+    margin-right: 0.5rem;
+}
+
+.card-transform {
+    background-color: var(--primario);
+    width: 60px;
+    height: 60px;
+    border-radius: 0.5rem;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+/* Animation */
+.one:hover {
+    transform: rotate(20deg);
+}
+
+.two:hover {
+    transform: scale(0.8);
+}
+
+.three:hover {
+    transform: skew(15deg, 10deg);
+}
+
+.four:hover {
+    transform: translate(8px, 5px);
+}
+
+.five:hover {
+    transform: matrix(0, 1, 1, 0, 0, 0);
+}
+
