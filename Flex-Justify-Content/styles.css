@@ -82,28 +82,71 @@ h4 {
     border-radius: 0.2rem;
 }
 /* Hover */
-.end:hover {
-    display: flex;
-    justify-content: flex-end;
-}
-.center:hover {
-    display: flex;
-    justify-content: center;
+
+.end {
+    animation: fin 3s infinite;
 }
 
-.space-between:hover {
-    display: flex;
-    justify-content: space-between;
+@keyframes fin {
+    0% {
+        justify-content: start;
+    }
+    100% {
+        justify-content: flex-end;
+    }
 }
 
-.space-around:hover {
-    display: flex;
-    justify-content: space-between;
+.center {
+    animation: centro 3s infinite;
 }
 
-.space-evenly:hover {
-    display: flex;
-    justify-content: space-evenly;
+@keyframes centro {
+    0% {
+        justify-content: start;
+    }
+    100% {
+        justify-content: center;
+    }
+}
+
+.space-between {
+    animation: between 3s infinite;
+}
+
+@keyframes between {
+    0% {
+        justify-content: start;
+    }
+    100% {
+        justify-content: space-between;
+    }
+}
+
+.space-around {
+    animation: around 3s infinite;
+}
+
+@keyframes around {
+    0% {
+        justify-content: start;
+    }
+    100% {
+        justify-content: space-around;
+    }
+}
+
+
+.space-evenly {
+    animation: around 3s infinite;
+}
+
+@keyframes evenly {
+    0% {
+        justify-content: start;
+    }
+    100% {
+        justify-content: space-evenly;
+    }
 }
 
 
