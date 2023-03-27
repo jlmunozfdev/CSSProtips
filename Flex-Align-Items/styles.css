@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primario: #f5e58b;
+    --secundario: #5318b1;
+    --gris: #3b3b3b;
+    --blanco: #ffffff;
+    --negro: #1f1f1f;
+    --grisClaro: #e1e1e1;
+    --separacion: 5rem;
+    --fuentePrincipal: 'Poppins', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    background: var(--primario);
+}
+h3 {
+    font-size: 3rem;
+    color: var(--secundario);
+}
+
+h3 span{
+    color: var(--gris);
+}
+
+h4 {
+    color: var(--secundario);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.flex {
+   display: grid;
+   grid-template-columns: 10rem 1fr;
+   place-items: center;
+   gap: 1rem;
+}
+
+.card {
+    display: flex;
+    align-items: stretch;
+    background: var(--negro);
+    width: 10rem;
+    height: 8rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    gap: 1rem;
+    cursor: pointer;
+}
+.card p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.card span {
+    color: var(--secundario);
+    margin-right: 0.5rem;
+}
+
+.card div:nth-child(1){
+    width: 1rem;
+    min-height: 1rem;
+    background: var(--primario);
+}
+.card div:nth-child(2){
+    width: 2rem;
+    min-height: 2rem;
+    background: var(--primario);
+}
+.card div:nth-child(3){
+    width: 3rem;
+    min-height: 3rem;
+    background: var(--primario);
+}
+
+/* Animation */
+.center {
+    animation: centro 3s infinite;
+}
+
+@keyframes centro {
+    0% {
+        align-items: stretch;
+    }
+
+    50% {
+        align-items: center;
+    }
+    100% {
+        align-items: stretch;
+    }
+}
+
+.flex-start {
+    animation: star 3s infinite;
+}
+
+@keyframes star {
+    0% {
+        align-items: stretch;
+    }
+
+    50% {
+        align-items: flex-start;
+    }
+    100% {
+        align-items: stretch;
+    }
+}
+
+
+.end {
+    animation: fin 3s infinite;
+}
+
+@keyframes fin {
+    0% {
+        align-items: stretch;
+    }
+
+    50% {
+        align-items: flex-end;
+    }
+    100% {
+        align-items: stretch;
+    }
+}
+
+.baseline {
+    animation: baselin 3s infinite;
+}
+
+@keyframes baselin {
+    0% {
+        align-items: stretch;
+    }
+
+    50% {
+        align-items: baseline;
+    }
+    100% {
+        align-items: stretch;
+    }
+}
+
+
+
+
+
