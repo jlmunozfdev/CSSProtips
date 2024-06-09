@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', sans-serif;
+    transition: all 0.5s ease;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: #01413d;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a {
+    color: yellowgreen;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+ul li {
+    padding: 1rem;
+}
+
+.fab {
+    font-size: 2rem;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.fa-tiktok:hover, .fa-tiktok:focus {
+    color: #6b6060;
+    transform: scale(1.1);
+}
+
+.fa-x-twitter:hover, .fa-x-twitter:focus {
+    color: #1da1f2;
+    transform: scale(1.1);
+}
+
+.fa-instagram:hover, .fa-instagram:focus {
+    color: #FC005F;
+    transform: scale(1.1);
+}
+
+.fa-github:hover, .fa-github:focus {
+    color: #000;
+    transform: scale(1.1);
+}
+
+
+@media (min-width: 480px) {
+    .title {
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .fab {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 3rem;
+        letter-spacing: 0.8rem;
+        letter-spacing: 1rem;
+    }
+
+    .fab {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title {
+        font-size: 4rem;
+        letter-spacing: 1rem;
+    }
+
+    .fab {
+        font-size: 5rem;
+    }
+
+    ul {
+        font-size: 2rem;
+    }
+}
